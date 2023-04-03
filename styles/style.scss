@@ -1,0 +1,122 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: $whiteColor;
+  font-family: 'Times New Roman', 'Arial-black', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.header {
+  padding-top: 20px;
+  font-size: 25px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
+}
+
+.main {
+  margin: 30px 0 30px;
+}
+
+table, th, td {
+  border: 1px solid $blackColor;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+.color-blue {
+  background-color: $blueColor;
+}
+.color-green {
+  background-color: $greenColor;
+}
+
+.footer {
+  display: flex;
+  align-self: end;
+
+  @media screen and (max-width: 500px) {
+    align-self: center;
+  }
+}
+
+.footer__links {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+  .insta {
+    background-color: $blackColor;
+    border-radius: 20px;
+
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .insta svg {
+    fill: $whiteColor;
+
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .insta:hover {
+    background-color: $redSecondChild10;
+  }
+
+  .linkedIn {
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .linkedIn svg {
+    border-radius: 20px;
+
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .linkedIn:hover svg {
+    fill: $blueSecondChild;
+  }
+
+  .github {
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .github svg {
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .github:hover svg {
+    fill: $greenFirstChild10;
+  }
+}
